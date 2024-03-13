@@ -4,10 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import Footer from '../Footer/Footer';
 
 
 export default function Blogs() {
   return (
+    <>
     <div className='bg-green-100 h-screen'>
         <h1 className='text-center text-4xl pt-4 font-mono '>Blogs</h1>
     <div className='flex m-28 space-x-24 '>
@@ -72,7 +74,10 @@ export default function Blogs() {
       
     </Card>
     </div>
+   
     </div>
+    
+    </>
   );
 }
 

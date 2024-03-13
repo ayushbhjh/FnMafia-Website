@@ -11,62 +11,54 @@ export default function Footer() {
       <footer className="h-full pt-12 pb-12 ">
         <div class="flex justify-evenly">
           {/* <div class="row"> */}
-          <div class="col-md-3 ">
-            <div class="useful-link">
+          <div>
+            <div class="useful-link ">
               <h2>Useful Links</h2>
-              {/* <img
-                src="./assets/images/about/home_line.png"
-                alt=""
-                class="img-fluid"
-              /> */}
-              <div class="use-links ">
+             
+              <div class="use-links text-slate-400">
                 <li>
-                  {/* <a href="/Home"> */}
-                    <i class="fa-solid fa-angles-right"></i> Home
-                  {/* </a> */}
+                  <a href="/Home">
+                     Home
+                  </a>
                 </li>
                 <li>
                   <a href="/Program">
-                    <i class="fa-solid fa-angles-right"></i> Program{" "}
+                    Program{" "}
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <i class="fa-solid fa-angles-right"></i> Plan
+                     Plan
                   </a>
                 </li>
                 <li>
                   <a href="/Contact">
-                    <i class="fa-solid fa-angles-right"></i> Contact me
+                    Contact me
                   </a>
                 </li>
               </div>
             </div>
           </div>
-          <div class="">
-            <div class="social-links">
+          <div >
+            <div class="social-links ">
               <h2>Follow Us</h2>
-              <img src="./assets/images/about/home_line.png" alt="" />
               <div class="social-icons ">
                 <li>
-                  <a
-                    href="#https://www.facebook.com/"
-                    target="_blank"
-                  >
+                 <a href="https://www.facebook.com" target="_blank">
                     <FacebookIcon/> Facebook
-                  </a>
+                </a>
                 </li>
                 <li>
                   <a
                     href="https://www.instagram.com"
                     target="_blank"
                   >
-                    <InstagramIcon className="text-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"/> Instagram
+                    <InstagramIcon/> Instagram
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#https://in.linkedin.com/"
+                    href="#https://www.linkedin.com"
                     target="_blank"
                   >
                     <LinkedInIcon/> Linkedin
