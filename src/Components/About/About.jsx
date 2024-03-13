@@ -1,7 +1,9 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 
 export default function About() {
   return (
+    <>
     <div className='bg-slate-400'>
          <div className="about">
             <div className="text-3xl text-center pt-10 font-mono ">About Us</div>
@@ -22,6 +24,9 @@ export default function About() {
                 </div>
             </div>
          </div>
+        
     </div>
+     {/* <Footer/> */}
+     </>
   )
 }
