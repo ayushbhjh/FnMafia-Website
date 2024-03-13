@@ -8,22 +8,22 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function Footer() {
   return (
     <div>
-      <footer className="h-full pt-12 pb-12">
+      <footer className="h-full pt-12 pb-12 ">
         <div class="flex justify-evenly">
           {/* <div class="row"> */}
-          <div class="col-md-3">
+          <div class="col-md-3 ">
             <div class="useful-link">
               <h2>Useful Links</h2>
-              <img
+              {/* <img
                 src="./assets/images/about/home_line.png"
                 alt=""
                 class="img-fluid"
-              />
-              <div class="use-links">
+              /> */}
+              <div class="use-links ">
                 <li>
-                  <a href="/Home">
+                  {/* <a href="/Home"> */}
                     <i class="fa-solid fa-angles-right"></i> Home
-                  </a>
+                  {/* </a> */}
                 </li>
                 <li>
                   <a href="/Program">
@@ -31,7 +31,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/Plan">
+                  <a href="/">
                     <i class="fa-solid fa-angles-right"></i> Plan
                   </a>
                 </li>
@@ -47,7 +47,7 @@ export default function Footer() {
             <div class="social-links">
               <h2>Follow Us</h2>
               <img src="./assets/images/about/home_line.png" alt="" />
-              <div class="social-icons">
+              <div class="social-icons ">
                 <li>
                   <a
                     href="#https://www.facebook.com/"
@@ -61,7 +61,7 @@ export default function Footer() {
                     href="https://www.instagram.com"
                     target="_blank"
                   >
-                    <InstagramIcon/> Instagram
+                    <InstagramIcon className="text-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"/> Instagram
                   </a>
                 </li>
                 <li>

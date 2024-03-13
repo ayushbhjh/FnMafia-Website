@@ -35,16 +35,13 @@ export default function Navbar({username}) {
         <div class="flex flex-shrink-0 items-center">
           <img class="h-10 w-auto rounded-md" src="./Images/fnLogo.jpeg" alt="Your Company" />
         </div>
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex space-x-4">
-           
-
-
+        <div class="hidden sm:ml-6 sm:block ">
+          <div class="flex space-x-4 m-10">
             <Link to='/' class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</Link>
-            <Link to='/about' class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About Us</Link>
-            <Link to='/' class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</Link>
-            <Link to='/blogs' class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Blogs</Link>
-            <Link to='/footer' class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact Us</Link>
+            <Link to='/about' class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-4 py-2 text-sm font-medium" aria-current="page">About Us</Link>
+            {/* <Link to='/' class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</Link> */}
+            <Link to='/blogs' class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-4 py-2 text-sm font-medium">Blogs</Link>
+            <Link to='/footer' class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-4 py-2 text-sm font-medium">Contact Us</Link>
           </div>
         </div>
       </div>

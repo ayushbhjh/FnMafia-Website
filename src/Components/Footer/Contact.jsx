@@ -30,7 +30,7 @@ export default function Contact() {
           />
         </div>
         <div className="mx-7">
-          <Button variant="contained" size="medium" type="submit">
+          <Button variant="contained" size="medium" type="submit" className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
             Submit
           </Button>
         </div>
