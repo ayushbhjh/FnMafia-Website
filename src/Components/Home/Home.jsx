@@ -1,10 +1,9 @@
 import React from 'react';
 import About from '../About/About';
-import Blogs from '../Blogs/Blogs';
 import Contact from '../Footer/Contact';
 import Footer from '../Footer/Footer';
 import { Button } from '@mui/material';
-
+ 
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
 
 
        <About/>
-      <Blogs/>
+       <Contact/>
       {/* <Footer/> */}
     </div>
   )
