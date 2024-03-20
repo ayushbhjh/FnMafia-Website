@@ -1,44 +1,66 @@
 import React, { useState } from "react";
 import './Contact.css'
-
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 export default function Contact() {
 
-  const [cont, setCont] = useState('');
-  const [name, setName] = useState('');
-  const [number, setNumber] = useState('');
+  const [name,setName] = useState('');
+  const [email,setemial] = useState('');
+  const [message, setmessage] = useState('');
 
-  function handleSubmit() {
+  function handleSubmit(e) {
+    e.preventDefault()
     console.log("Name:", name);
-    console.log("Number:", number);
+    console.log("email:",email );
+    console.log("message",message)
+    if (!name.trim() || !message.trim()) {
+      toast.error("Please enter your name and message");
+      return;
+    }
+    if (!validateEmail(email)) {
+      toast.error("Enter valid email");
+      return;
+    }
+    const messageData = {
+      name: name,
+      email: email,
+      message: message
+    };
+    localStorage.setItem('messageData', JSON.stringify(messageData));
     setName('');
-    setNumber('');
+    setemial('');
+    setmessage('');
+    toastify()
   }
-
+function toastify(){
+  toast.success("Meessage passed successful")
+}
+function validateEmail(inputEmail) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(inputEmail);
+}
   return (
-   
-    <div className='contact-container'>
-       <div className="contact" id="contact">
-        <div className="head">
-          <h1> Let's <span>Begin...</span></h1>
-          <h2>Contact <span>Us</span></h2>
-        </div>
-        <div className="contactpage">
-          <div className="contactext">
-            <h1>Let's Go</h1>
-            <h2>Start Your journey with us....</h2>
-          </div>
-          <img
-            src="https://media.licdn.com/dms/image/D5612AQHnSn_khe136w/article-cover_image-shrink_600_2000/0/1693664629905?e=2147483647&v=beta&t=g0fR7GsDAjnijtLRmQL-u8jwtV-cst6CWCMTOGsRvRA"
-            alt="remote image"
-          />
-        </div>
-        <div className="contactus">
-          <h1 className='cont'>Contact us</h1>
-          <input type="text" placeholder="Enter your Name" id="name"   value={name} onChange={(e) => setName(e.target.value)} /><br/>
-          <input type="text" placeholder="Enter your Number" id="number"  value={number} onChange={(e) => setNumber(e.target.value)}/><br/>
-          <button onClick={handleSubmit}>Submit</button> 
-        </div>
+   <div className="conatiner ">
+    <div className='contact-container bg-gray-300'>
+       <div className="contact bg-gray-400" id="contact">
+       <h1>Contact us</h1>
+       <div className="name">
+       <i class="fa-solid fa-user"></i>
+       <input type="text" placeholder="Name" className="name1" value={name} onChange={(e)=> setName(e.target.value)}/>
+       </div>
+       <div className="email">
+       <i class="fa-solid fa-envelope"></i>
+       <input type="email" placeholder="Email" className="email1" value={email} onChange={(e)=> setemial(e.target.value)} />
+       </div>
+        <textarea name="" id="" cols="10" rows="8" placeholder=" Your Message" className="message" value={message} onChange={(e)=> setmessage(e.target.value)}></textarea>
+        <button className="sendmessage" onClick={handleSubmit}>Send Message</button>
+        <ToastContainer/>
+       <div className="image">
+
+       </div>
       </div>
       </div>
+   </div>
+    
   );
 }
