@@ -8,6 +8,7 @@ import { useState } from 'react';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Footer/Contact';
+import Career from './Components/Career/Career';
 // import Contact from './Components/Footer/Contact';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/> 
-        {/* <Route path='/' element={<Team/>}/>*/}
+        <Route path='/career' element={<Career/>}/>
         {/* <Route path='/footer' element={<Footer/>}/>  */}
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/signin' element={<SignIn handleLogin={handleLogin}/>}/>
