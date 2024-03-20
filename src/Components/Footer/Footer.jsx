@@ -4,7 +4,7 @@ import "./Footer.css";
 // import FacebookIcon from "@mui/icons-material/Facebook";
 // import InstagramIcon from "@mui/icons-material/Instagram";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+// import Div from "./Div";
 export default function Footer() {
   return (
     // <div>
@@ -81,6 +81,8 @@ export default function Footer() {
     //     </div>
     //   </section> */}
     // </div>
+    <>
+  
     <div className="conatin">
       <div className="footer">
         <div className="footer1">
@@ -136,5 +138,7 @@ export default function Footer() {
         <p className="last">© 2024 FnMafia International</p>
       </div>
     </div>
+    {/* <Div/> */}
+    </>
   );
 }
