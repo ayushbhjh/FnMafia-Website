@@ -19,7 +19,7 @@ function App() {
   }
   return (
     <>
-      <Navbar username={username}/>
+      <Navbar username={username} />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/> 

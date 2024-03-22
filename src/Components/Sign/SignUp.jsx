@@ -25,7 +25,7 @@ export default function SignUp({handleLogin}) {
 
 
   return (
-    <div className='bg-slate-900 h-screen '>
+    <div className='bg-slate-800 h-screen '>
   
 <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 ">
   <div class="sm:mx-auto sm:w-full sm:max-w-sm">
