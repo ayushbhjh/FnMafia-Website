@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .conatin{
-	background-color: rgb(84, 82, 82);
+	/* background-color: rgb(61, 61, 61); */
 	color: white;
 	width: 100vw;
 	height: 75vh;
@@ -111,4 +111,9 @@
 .last{
 	text-align: center;
 	margin-top: 3%;
+}
+#session{
+	height: 6rem;
+	width: 3rem;
+	color: #04ccef;
 }

@@ -50,14 +50,14 @@ function validateEmail(inputEmail) {
       <div>
         <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Full Name</label>
         <div class="mt-2">
-          <input id="name" name="name" type="text" autocomplete="name" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-3 h-12" value={name} onChange={(e)=> setName(e.target.value)}/>
+          <input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="name" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-3 h-12" value={name} onChange={(e)=> setName(e.target.value)}/>
         </div>
       </div>
 
       <div>
         <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
         <div class="mt-2">
-          <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-3 h-12" value={email} onChange={(e)=> setemial(e.target.value)}/>
+          <input id="email" name="email" type="email" placeholder="Emaid id" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-3 h-12" value={email} onChange={(e)=> setemial(e.target.value)}/>
         </div>
       </div>
 
@@ -66,7 +66,7 @@ function validateEmail(inputEmail) {
           <label for="meesage" class="block text-sm font-medium leading-6 text-gray-900">Message</label>
         </div>
         <div class="mt-2">
-          <textarea id="message" name="message" type="text" autocomplete="password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-3 h-24" value={message} onChange={(e)=> setmessage(e.target.value)}/>
+          <textarea id="message" name="message" type="text" placeholder="Write your messsage" autocomplete="password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-3 h-24" value={message} onChange={(e)=> setmessage(e.target.value)}/>
         </div>
       </div>
 

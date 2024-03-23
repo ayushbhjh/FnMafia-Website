@@ -83,7 +83,7 @@ export default function Footer() {
     // </div>
     <>
   
-    <div className="conatin">
+    <div className="conatin bg-gray-800">
       <div className="footer">
         <div className="footer1">
           <div className="solut">
@@ -129,10 +129,10 @@ export default function Footer() {
             <p>Do Not Sell my Personal Information</p>
           </div>
           <div className="profile">
-         <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
-         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-         <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+         <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin" id="session"></i></a>
+         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" id="session" ></i></a>
+         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" id="session"></i></a>
+         <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" id="session"></i></a>
           </div>
         </div>
         <p className="last">© 2024 FnMafia International</p>
