@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Footer.css";
 // import Contact from "./Contact";
@@ -82,63 +83,71 @@ export default function Footer() {
     //   </section> */}
     // </div>
     <>
-  
-    <div className="conatin bg-gray-800">
-      <div className="footer">
-        <div className="footer1">
-          <div className="solut">
-            <h3>Solutions</h3>
-            <p>
-              <li>Ai solution</li>
-              <li>Customer Experience</li>
-              <li>Digital Experience (DX)</li>
-              <li>IT Lifecycle</li>
-              <li>Trust, Safety & Security</li>
-            </p>
+      <div className="conatin bg-gray-800">
+        <div className="footer">
+          <div className="footer1">
+            <div className="solut">
+              <h3>Solutions</h3>
+              <p>
+                <li>Ai solution</li>
+                <li>Customer Experience</li>
+                <li>Digital Experience (DX)</li>
+                <li>IT Lifecycle</li>
+                <li>Trust, Safety & Security</li>
+              </p>
+            </div>
+            <div className="indus">
+              <h3>Industries</h3>
+              <p>
+                <li>Technology</li>
+                <li>Communication and media</li>
+                <li>Fintech & Financial Services</li>
+                <li>Games</li>
+                <li>Development</li>
+              </p>
+            </div>
+            <div className="abot">
+              <h3>About us</h3>
+              <p>
+                <li>Our Team</li>
+                <li>Social impact</li>
+                <li>Location</li>
+                <li>our Awards</li>
+                <li>Twchnology partners</li>
+              </p>
+            </div>
           </div>
-          <div className="indus">
-            <h3>Industries</h3>
-            <p>
-              <li>Technology</li>
-              <li>Communication and media</li>
-              <li>Fintech & Financial Services</li>
-              <li>Games</li>
-              <li>Development</li>
-            </p>
-          </div>
-          <div className="abot">
-            <h3>About us</h3>
-            <p>
-              <li>Our Team</li>
-              <li>Social impact</li>
-              <li>Location</li>
-              <li>our Awards</li>
-              <li>Twchnology partners</li>
-            </p>
-          </div>
-        </div>
 
-        <div className="profiles">
-          <div className="setting">
-            <p>
-              <i class="fa-solid fa-gear"></i>
-              <span>Cookies perferences</span>
-            </p>
+          <div className="profiles">
+            <div className="setting">
+              <p>
+                <i class="fa-solid fa-gear"></i>
+                <span>Cookies perferences</span>
+              </p>
+            </div>
+            <div className="para">
+              <p>Do Not Sell my Personal Information</p>
+            </div>
+            <div className="profile">
+              <a href="https://www.linkedin.com/feed/">
+                <i class="fa-brands fa-linkedin" id="session"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram" id="session"></i>
+              </a>
+              <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook" id="session"></i>
+              </a>
+              <a href="https://www.youtube.com/">
+                <i class="fa-brands fa-youtube" id="session"></i>
+              </a>
+            </div>
           </div>
-          <div className="para">
-            <p>Do Not Sell my Personal Information</p>
-          </div>
-          <div className="profile">
-         <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin" id="session"></i></a>
-         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" id="session" ></i></a>
-         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" id="session"></i></a>
-         <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" id="session"></i></a>
-          </div>
+          <p className="last">©️ 2024 FnMafia International</p>
         </div>
-        <p className="last">© 2024 FnMafia International</p>
       </div>
-    </div>
-    {/* <Div/> */}
+      {/* <Div/> */}
     </>
   );
 }
+
