@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Footer.css";
 // import Contact from "./Contact";
@@ -83,7 +82,7 @@ export default function Footer() {
     //   </section> */}
     // </div>
     <>
-      <div className="conatin bg-gray-800">
+      <div className="relative conatin bg-gray-800 top-16">
         <div className="footer">
           <div className="footer1">
             <div className="solut">
@@ -150,4 +149,3 @@ export default function Footer() {
     </>
   );
 }
-

@@ -66,9 +66,9 @@ export default function Home() {
                 machine learning models. We provide AI training data at scale
                 with our global community - 1 million strong - of AI experts.
               </p>
-              <button className="text-white mt-4 p-3 rounded-md w-2/5 bg-green-600 hover:bg-green-700 active:bg-violet-700 focus:outline-none focus:ring focus:ring-green-400">
+              <Link to=''><button className="text-white mt-4 p-3 rounded-md w-2/5 bg-green-600 hover:bg-green-700 active:bg-violet-700 focus:outline-none focus:ring focus:ring-green-400">
                 Improve your AI today
-              </button>
+              </button></Link>
             </div>
             <div className="h-2 -mt-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ..."></div>
           </div>

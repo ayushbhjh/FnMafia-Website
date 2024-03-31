@@ -38,7 +38,7 @@ export default function Contact() {
     return emailPattern.test(inputEmail);
   }
   return (
-    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 w-full bg-gray-300">
+    <div class="relative flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 w-full bg-gray-300 top-16">
       <div class="sm:mx-auto sm:w-full sm:max-w-sm mt-12">
         <img
           class="mx-auto h-24 w-28 rounded-3xl  "
