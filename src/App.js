@@ -22,10 +22,8 @@ function App() {
       <Navbar username={username} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/career" element={<Career />} />
-        {/* <Route path='/footer' element={<Footer/>}/>  */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/signin" element={<SignIn handleLogin={handleLogin} />} />
         <Route path="/signup" element={<SignUp handleLogin={handleLogin} />} />
